@@ -2,6 +2,7 @@
 My axsos journey
 Welcome to Axsos-Showcast, a personal collection of my QA Testing journey. This repository is where I showcase the results of my hard work, continuous learning, and growth during my time in the AXSOS Academy QA Testing part-time Program.
 
+![image](https://github.com/user-attachments/assets/64672f90-bbe4-438e-8586-9a3c9b96edda)
 
 
 About This Repository
