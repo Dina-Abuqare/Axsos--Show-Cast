@@ -225,9 +225,9 @@ public class TestCasesB {
         Thread.sleep(2000);
         String alertText = driver.switchTo().alert().getText();
         System.out.println("Alert Message: " + alertText);
-
+        Assert.assertTrue(alertText.toLowerCase().contains("log in"), "Expected alert about login not shown");
         driver.switchTo().alert().accept();
-         driver.get("https://www.demoblaze.com/");
+        driver.get("https://www.demoblaze.com/");
         Thread.sleep(2000);
     }
 
@@ -248,6 +248,7 @@ public class TestCasesB {
         Thread.sleep(2000);
         String alertText = driver.switchTo().alert().getText();
         System.out.println("Alert Message: " + alertText);
+         Assert.assertTrue(alertText.toLowerCase().contains("log in"), "Expected alert about login not shown");
         driver.switchTo().alert().accept();
         driver.get("https://www.demoblaze.com/");
         Thread.sleep(2000);
@@ -271,6 +272,7 @@ public class TestCasesB {
 
         String alertText = driver.switchTo().alert().getText();
         System.out.println("Alert: " + alertText);
+        Assert.assertTrue(alertText.contains("log in"), "Expected login-required alert not");
 
         driver.switchTo().alert().accept();
     }
