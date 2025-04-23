@@ -183,7 +183,7 @@ public class TestCasesB {
     @Test(priority = 8)//Tc29
     public void testLaptopProductDetails() throws InterruptedException {
         driver.findElement(By.linkText("Laptops")).click();
-        Thread.sleep(2000); // Wait for laptops to load
+        Thread.sleep(2000); 
 
         List<WebElement> laptops = driver.findElements(By.cssSelector(".card-title a"));
         Assert.assertTrue(laptops.size() > 0, "No laptops found in the Laptops category");
