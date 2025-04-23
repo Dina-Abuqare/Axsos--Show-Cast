@@ -19,7 +19,7 @@ public class TestCases {
     @Test
     public void testPhoneProductDetails() throws InterruptedException {
         driver.findElement(By.linkText("Phones")).click();
-        Thread.sleep(2000); // Wait for phones to load
+        Thread.sleep(2000); 
 
         List<WebElement> phones = driver.findElements(By.cssSelector(".card-title a"));
         Assert.assertTrue(phones.size() > 0, "No phones found in the Phones categore");
