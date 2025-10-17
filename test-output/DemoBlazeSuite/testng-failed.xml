@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoBlazeSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SignUpTest(failed)">
+    <classes>
+      <class name="Tests.SignUpTest">
+        <methods>
+          <include name="testValidSignIn"/>
+          <include name="close"/>
+          <include name="testInvalidPasswordSignIn"/>
+          <include name="testInvalidUsernameSignIn"/>
+          <include name="setUp"/>
+          <include name="testInvalidSignIn"/>
+        </methods>
+      </class> <!-- Tests.SignUpTest -->
+    </classes>
+  </test> <!-- SignUpTest(failed) -->
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="testEmptyFieldsLogin"/>
+          <include name="TestValidCredentialsLogin"/>
+          <include name="testCompletelyInvalidLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [DemoBlazeSuite] -->

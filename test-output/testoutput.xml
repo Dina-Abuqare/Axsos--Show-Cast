@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoBlazeSuite" parallel="none">
+
+     <test name="SignUpTest">
+        <classes>
+            <class name="Tests.SignUpTest"/>
+        </classes>
+    </test>
+ 
+    <test name="LoginTest">
+        <classes>
+            <class name="Tests.LoginTest"/>
+        </classes>
+    </test>
+    
+      <test name="AboutUsTest">
+        <classes>
+            <class name="Tests.AboutUsTest"/>
+        </classes>
+    </test>
+    
+      <test name="LogoutTest">
+        <classes>
+            <class name="Tests.LogoutTest"/>
+        </classes>
+    </test>
+</suite>

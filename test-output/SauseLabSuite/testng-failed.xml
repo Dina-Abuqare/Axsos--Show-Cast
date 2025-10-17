@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SauseLabSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SignUpTest(failed)">
+    <classes>
+      <class name="QATestingProject.AutomationTesting.SignUpTest">
+        <methods>
+          <include name="testInvalidSignIn"/>
+          <include name="Close"/>
+          <include name="testInvalidPasswordSignIn"/>
+          <include name="testInvalidUsernameSignIn"/>
+          <include name="testInvalidEmptyFieldSignIn"/>
+          <include name="testValidSignIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- QATestingProject.AutomationTesting.SignUpTest -->
+    </classes>
+  </test> <!-- SignUpTest(failed) -->
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="QATestingProject.AutomationTesting.LoginTest">
+        <methods>
+          <include name="Close"/>
+          <include name="testCompletelyInvalidLogin"/>
+          <include name="testInvalidPasswordLogin"/>
+          <include name="testEmptyFieldsLogin"/>
+          <include name="TestValidCredentialsLogin"/>
+          <include name="TestInvalidUsernameLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- QATestingProject.AutomationTesting.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test thread-count="5" name="AboutUsTest(failed)">
+    <classes>
+      <class name="QATestingProject.AutomationTesting.AboutUsTest">
+        <methods>
+          <include name="Close"/>
+          <include name="testAboutUsModalText"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- QATestingProject.AutomationTesting.AboutUsTest -->
+    </classes>
+  </test> <!-- AboutUsTest(failed) -->
+  <test thread-count="5" name="LogoutTest(failed)">
+    <classes>
+      <class name="QATestingProject.AutomationTesting.LogoutTest">
+        <methods>
+          <include name="Close"/>
+          <include name="setUp"/>
+          <include name="testLogoutFunctionality"/>
+        </methods>
+      </class> <!-- QATestingProject.AutomationTesting.LogoutTest -->
+    </classes>
+  </test> <!-- LogoutTest(failed) -->
+</suite> <!-- Failed suite [SauseLabSuite] -->
